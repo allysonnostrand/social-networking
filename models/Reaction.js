@@ -9,7 +9,7 @@ const reactionSchema = new Schema({
         maxlength: 280},
 
     username: {type: String,
-        ref: User,
+        ref: 'User',
         required: true},
 
     createdAt: {type: Date,
