@@ -7,7 +7,7 @@ module.exports = {
       User.find()
         .then(async (users) => {
           const userObj = {
-            users
+            users,
           };
           return res.json(userObj);
         })
