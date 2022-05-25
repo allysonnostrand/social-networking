@@ -23,11 +23,13 @@ To run this application make sure to download the following packages with ```npm
 
 Here are a couple videos demonstrating the applications functionality.
 
+User Routes Functionality
 
+https://drive.google.com/file/d/1kLildRmCR3AtRVDNP4TT-XOk5hsRyHIL/view
 
-Video 2 
+Thought Routes Functionality
 
-
+https://drive.google.com/file/d/1Px4-N6xk9wPHEy-B4kv2OtHJWn3HmyP_/view
 
 ## License
 

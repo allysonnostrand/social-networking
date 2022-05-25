@@ -27,36 +27,28 @@ connection.once('open', async () => {
       }
   ];
 
-  const thoughts = [
-      {
-          username: 'test1',
-          thoughtText: 'this is a thought from test 1'
-      },
-      {
-          username: 'test2',
-          thoughtText: 'this is a thought from test 2'
-      },
-      {
-          username: 'test3',
-          thoughtText: 'this is a thought from test 3'
-      },
-  ]
+//   const thoughts = [
+//       {
+//           username: 'test1',
+//           thoughtText: 'this is a thought from test 1'
+//       },
+//       {
+//           username: 'test2',
+//           thoughtText: 'this is a thought from test 2'
+//       },
+//       {
+//           username: 'test3',
+//           thoughtText: 'this is a thought from test 3'
+//       },
+//   ]
 
   // Add students to the collection and await the results
   await User.collection.insertMany(users);
-  await Thought.collection.insertMany(thoughts);
-
-  // Add courses to the collection and await the results
-//   await Course.collection.insertOne({
-//     courseName: 'UCLA',
-//     inPerson: false,
-//     students: [...students],
-//   });
+//   await Thought.collection.insertMany(thoughts);
 
   // Log out the seed data to indicate what should appear in the database
   console.table(users);
-  console.table(thoughts);
-//   console.table(assignments);
+//   console.table(thoughts);
   console.info('Seeding complete! 🌱');
   process.exit(0);
 });
