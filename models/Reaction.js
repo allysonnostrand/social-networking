@@ -9,11 +9,13 @@ const reactionSchema = new Schema({
         maxlength: 280},
 
     username: {type: String,
-        ref: 'User',
+        ref: 'user',
         required: true},
 
     createdAt: {type: Date,
-        default: Date.now}
+        default: Date.now,
+        get: (date) => {
+            return date.toString()}},
 },
 {
     toJSON: {
